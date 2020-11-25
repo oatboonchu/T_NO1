@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Test QR code</string>
+    <string name="textView">Generate Qr-Code</string>
+    <string name="editTextTextPersonName">Enter value :</string>
+    <string name="button">Generate</string>
+    <string name="button2">Back</string>
+    <string name="button3">Download</string>
 </resources>
