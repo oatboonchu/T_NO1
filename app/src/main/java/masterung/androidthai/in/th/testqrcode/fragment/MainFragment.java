@@ -53,8 +53,19 @@ public class MainFragment extends Fragment{
                         getActivity().getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.contentMainFragment, new MainFragment()).commit();
 
+                        for(int i=0;i<resultString.length();i++){
+                            if(resultString.charAt(0)!='h'&&resultString.charAt(1)!='t'){
+                                resultString ="http://"+resultString;
+                            }
+                        }
+
+
+
+
                         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(resultString));
                         startActivity(browserIntent);
+
+
                     }
                 });
 
