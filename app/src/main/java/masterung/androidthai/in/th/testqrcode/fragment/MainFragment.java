@@ -45,7 +45,7 @@ public class MainFragment extends Fragment{
                     public void handleResult(Result result) {
 
                         zXingScannerView.stopCamera();
-                        getActivity().setContentView(R.layout.activity_main);
+                        getActivity().setContentView(R.layout.activity_scan);
                         String resultString = result.getText().toString();
                         Toast.makeText(getActivity(), "QR code = " + resultString,
                                 Toast.LENGTH_LONG).show();
